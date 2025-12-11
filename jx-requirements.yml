@@ -27,10 +27,10 @@ spec:
   repository: nexus
   secretStorage: secretsManager
   kuberhealthy: false
-  vault:
-    aws:
-      autoCreate: true
-      iamUserName: marko
+  # vault:
+  #   aws:
+  #     autoCreate: true
+  #     iamUserName: marko
 
-    disableURLDiscovery: true
+    # disableURLDiscovery: true
   webhook: lighthouse
