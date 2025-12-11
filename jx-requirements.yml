@@ -18,7 +18,7 @@ spec:
   - key: production
   ingress:
     domain: "jx.4-cube.tech"
-    externalDNS: true
+    externalDNS: false
     namespaceSubDomain: -jx.
     # tls:
     #   email: ""
