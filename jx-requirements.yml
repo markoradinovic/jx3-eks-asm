@@ -26,6 +26,7 @@ spec:
     #   production: false
   repository: nexus
   secretStorage: secretsManager
+  kuberhealthy: false
   vault:
     aws:
       autoCreate: true
