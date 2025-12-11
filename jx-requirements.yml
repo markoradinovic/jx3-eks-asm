@@ -17,13 +17,13 @@ spec:
   - key: staging
   - key: production
   ingress:
-    domain: ""
-    externalDNS: false
+    domain: "jx.4-cube.tech"
+    externalDNS: true
     namespaceSubDomain: -jx.
-    tls:
-      email: ""
-      enabled: false
-      production: false
+    # tls:
+    #   email: ""
+    #   enabled: false
+    #   production: false
   repository: nexus
   secretStorage: secretsManager
   vault:
