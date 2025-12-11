@@ -5,13 +5,13 @@ spec:
     enabled: false
     schedule: ""
   cluster:
-    devEnvApprovers:
-    - todo
-    environmentGitOwner: todo
+    clusterName: sportify
+    environmentGitOwner: 4-cube
     gitKind: github
     gitName: github
     gitServer: https://github.com
     provider: eks
+    region: eu-west-1
   environments:
   - key: dev
   - key: staging
@@ -26,5 +26,10 @@ spec:
       production: false
   repository: nexus
   secretStorage: secretsManager
-  vault: {}
+  vault:
+    aws:
+      autoCreate: true
+      iamUserName: marko
+
+    disableURLDiscovery: true
   webhook: lighthouse
